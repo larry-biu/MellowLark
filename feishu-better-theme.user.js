@@ -8,8 +8,8 @@
 // @author       Larry
 // @homepageURL  https://github.com/mellow-theme/MellowLark
 // @supportURL   https://github.com/mellow-theme/MellowLark/issues
-// @updateURL    https://raw.githubusercontent.com/mellow-theme/MellowLark/main/color.js
-// @downloadURL  https://raw.githubusercontent.com/mellow-theme/MellowLark/main/color.js
+// @updateURL    https://raw.githubusercontent.com/mellow-theme/MellowLark/main/feishu-better-theme.user.js
+// @downloadURL  https://raw.githubusercontent.com/mellow-theme/MellowLark/main/feishu-better-theme.user.js
 // @match        *://*.feishu.cn/*
 // @match        *://*.larksuite.com/*
 // @grant        GM_registerMenuCommand

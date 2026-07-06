@@ -61,7 +61,7 @@
 
 点击下方链接，在弹出的 Tampermonkey 页面里点击"安装"即可：
 
-👉 **[从 GitHub 直接安装（点击此链接）](https://raw.githubusercontent.com/larry-biu/MellowLark/main/color.js)**
+👉 **[从 GitHub 直接安装（点击此链接）](https://raw.githubusercontent.com/larry-biu/MellowLark/main/feishu-better-theme.user.js)**
 
 > 如果点击后打开的是一个代码页面而不是安装弹窗，说明脚本管理器还未正确安装，请先完成第一步。
 
@@ -134,7 +134,7 @@ A：请确认：
 
 **Q：会不会影响我的飞书数据？**
 
-A：完全不会。MellowLark 只修改网页的视觉样式（CSS），不会读取、修改或上传任何数据。脚本里没有任何网络请求代码，你可以自行查看 [color.js](color.js) 源代码确认。
+A：完全不会。MellowLark 只修改网页的视觉样式（CSS），不会读取、修改或上传任何数据。脚本里没有任何 network 请求代码，你可以自行查看 [feishu-better-theme.user.js](feishu-better-theme.user.js) 源代码确认。
 
 **Q：飞书更新后主题失效了怎么办？**
 
@@ -146,7 +146,7 @@ A：目前主要支持多维表格（Base）。对其他模块的支持在路线
 
 **Q：可以自定义颜色吗？**
 
-A：当前版本不支持，但这是 v0.5 的计划功能。如果你有配色需求，可以直接修改 [color.js](color.js) 里的 `THEMES` 对象，每个颜色 token 都有注释说明用途。
+A：当前版本不支持，但这是 v0.5 的计划功能。如果你有配色需求，可以直接修改 [feishu-better-theme.user.js](feishu-better-theme.user.js) 里的 `THEMES` 对象，每个颜色 token 都有注释说明用途。
 
 **Q：Mac 还是 Windows 更适合使用？**
 
@@ -161,7 +161,7 @@ MellowLark 对你的隐私和数据安全无任何影响：
 - ✅ **只注入 CSS**，不操作 DOM 数据
 - ✅ **零网络请求**，不访问任何外部地址
 - ✅ **不收集信息**，无埋点、无统计、无分析
-- ✅ **代码完全开源**，可自行审计 [color.js](color.js)
+- ✅ **代码完全开源**，可自行审计 [feishu-better-theme.user.js](feishu-better-theme.user.js)
 - ✅ **MIT 开源协议**，可自由使用、修改、分发
 
 ---
@@ -170,7 +170,7 @@ MellowLark 对你的隐私和数据安全无任何影响：
 
 - 🐛 **发现 Bug**：[提交 Issue](https://github.com/larry-biu/MellowLark/issues/new?template=bug_report.md)
 - 💡 **功能建议**：[提交 Feature Request](https://github.com/larry-biu/MellowLark/issues/new?template=feature_request.md)
-- 🤝 **参与开发**：Fork 后提交 PR，详见 [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🤝 **参与开发**：欢迎 Fork 仓库并提交 PR 反馈。
 
 ---
 
@@ -196,7 +196,7 @@ It works by injecting a small CSS override at page load. It does **not** touch y
 
 Click this link to install directly:
 
-👉 **[Install from GitHub Raw](https://raw.githubusercontent.com/larry-biu/MellowLark/main/color.js)**
+👉 **[Install from GitHub Raw](https://raw.githubusercontent.com/larry-biu/MellowLark/main/feishu-better-theme.user.js)**
 
 **Step 3 — Open Feishu/Lark Base** and the theme applies automatically.
 
@@ -231,13 +231,11 @@ See [ROADMAP.md](ROADMAP.md) for planned milestones from v0.4 (selector stabilit
 
 ### Contributing
 
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions welcome!
 
 1. Fork this repository
-2. Edit [color.js](color.js)
+2. Edit [feishu-better-theme.user.js](feishu-better-theme.user.js)
 3. Submit a Pull Request
-
-Please also read our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md).
 
 ---
 

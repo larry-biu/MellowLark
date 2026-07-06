@@ -33,13 +33,13 @@ The "make it a real project" release. Focus was on engineering quality and proje
 Feishu regularly updates its frontend (React SPA). Class-name based selectors (`[class*="grid"]`, `[class*="cell"]`, etc.) are the most fragile part of the codebase and likely to break with Feishu version updates.
 
 ### Planned Work
-- [ ] Audit all CSS selectors in `color.js` and classify by stability tier:
+- [ ] Audit all CSS selectors in `feishu-better-theme.user.js` and classify by stability tier:
   - **Stable**: `role`, `aria-*`, `data-testid`, official CSS variables
   - **Semi-stable**: structural HTML elements (`input`, `textarea`, `a`)
   - **Fragile**: `[class*="..."]` substring matches
 - [ ] Replace all Tier-3 (fragile) selectors with Tier-1 or Tier-2 equivalents where possible
 - [ ] Document which selectors are known to change and add a compatibility note in CHANGELOG
-- [ ] Add a "Selector Health" section to CONTRIBUTING.md to guide future contributors
+- [ ] Add a "Selector Health" section to selector documentation to guide future contributors
 - [ ] Test on both `feishu.cn` and `larksuite.com` (internationalized domain)
 
 ---
@@ -108,7 +108,7 @@ The milestone that signals MellowLark is reliable, well-documented, and communit
 - [ ] At least 6 months of stable usage without major selector breakage
 - [ ] GreasyFork listing published with screenshots and full metadata
 - [ ] Community-contributed themes (at least 1 merged PR from an external contributor)
-- [ ] Comprehensive test checklist documented in CONTRIBUTING.md
+- [ ] Comprehensive test checklist documented for development guidance
 - [ ] GitHub Discussions enabled for community support
 
 ---
