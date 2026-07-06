@@ -62,7 +62,7 @@
 
 点击下方链接，在弹出的 Tampermonkey 页面里点击"安装"即可：
 
-👉 **[从 GreasyFork 安装（点击进入安装页面）](https://greasyfork.org/zh-CN/scripts/585800-mellowlark-feishu-lark-base-visual-comfort-theme)**
+👉 **[从 GitHub 直接安装（点击此链接）](https://raw.githubusercontent.com/larry-biu/MellowLark/main/dist/feishu-better-theme.user.js)**
 
 > 如果点击后打开的是一个代码页面而不是安装弹窗，说明脚本管理器还未正确安装，请先完成第一步。
 
@@ -197,7 +197,7 @@ It works by injecting a small CSS override at page load. It does **not** touch y
 
 Click this link to install directly:
 
-👉 **[Install from GreasyFork](https://greasyfork.org/zh-CN/scripts/585800-mellowlark-feishu-lark-base-visual-comfort-theme)**
+👉 **[Install from GitHub Raw](https://raw.githubusercontent.com/larry-biu/MellowLark/main/dist/feishu-better-theme.user.js)**
 
 **Step 3 — Open Feishu/Lark Base** and the theme applies automatically.
 
