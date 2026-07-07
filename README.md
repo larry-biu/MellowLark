@@ -47,66 +47,70 @@
 
 ---
 
-### 安装步骤
+### ⚙️ 图文安装步骤
 
-**第一步：安装脚本管理器**
-
-在浏览器里安装以下任意一个扩展（推荐 Tampermonkey）：
+#### 1️⃣ 第一步：安装油猴管家扩展 (Tampermonkey)
+在下方的表格中找到推荐的 **Tampermonkey** 插件，点击对应的 **「安装」** 链接跳转到应用商店：
 
 | 扩展 | Chrome | Edge | Firefox |
 |:---|:---|:---|:---|
-| [Tampermonkey](https://www.tampermonkey.net/)（推荐） | [安装](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) | [安装](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) | [安装](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
-| [Violentmonkey](https://violentmonkey.github.io/) | [安装](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegedbjckenbfgkggdbcga) | [安装](https://microsoftedge.microsoft.com/addons/detail/eeagobfjdenkkddmbclomhiblgggliao) | [安装](https://addons.mozilla.org/firefox/addon/violentmonkey/) |
+| [Tampermonkey](https://www.tampermonkey.net/)（推荐） | [安装（点击红框 1）](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) | [安装](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) | [安装](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
 
-**第二步：安装 MellowLark 脚本**
+在应用商店页面点击 **「添加至 Chrome」**（或 **「获取」**），并在弹出的确认框中选择 **「添加扩展程序」**。
 
-点击下方链接，在弹出的 Tampermonkey 页面里点击"安装"即可：
+![第一步：安装油猴扩展](assets/guide/user_step1.png)
+
+---
+
+#### 2️⃣ 第二步：一键安装 MellowLark 主题脚本
+油猴扩展安装好后，点击下方的脚本安装链接，一键将配色方案载入浏览器：
 
 👉 **[从 GitHub 直接安装（点击此链接）](https://raw.githubusercontent.com/larry-biu/MellowLark/main/dist/feishu-better-theme.user.js)**
 
-> 如果点击后打开的是一个代码页面而不是安装弹窗，说明脚本管理器还未正确安装，请先完成第一步。
+在浏览器自动弹出的安装页面中，点击左侧红框中的 **「安装」** (或 **「重新安装」**) 按钮。点击后该页面会自动关闭，脚本即安装成功。
 
-**第三步：打开飞书多维表格**
-
-打开 [飞书](https://www.feishu.cn) 或 [Lark](https://www.larksuite.com)，进入任意多维表格，主题会自动生效。
-
----
-
-### 主题介绍
-
-MellowLark 内置三套主题，全部采用低对比度、低饱和度的柔和色调：
-
-#### 🌾 纸墨（Paper）— 默认主题
-
-温暖的米白色系，接近纸张的质感。  
-适合大多数日常办公场景，在自然光或暖色灯光下效果最佳。
-
-#### 🌿 薄荷（Mint）
-
-柔和的浅绿色系，长时间使用眼睛负担较小。  
-适合需要长期盯着屏幕工作的场景，比如对账、录入数据等。
-
-#### ☁️ 云灰（Silver）
-
-现代冷灰色系，接近 Notion 或 Office 的风格。  
-适合喜欢简洁、专业感界面的用户。
+![第二步-1：点击 GitHub 直接安装链接](assets/guide/user_step2.png)
+![第二步-2：点击安装按钮](assets/guide/user_step3.png)
 
 ---
 
-### 如何切换主题 / 开关主题
+#### 3️⃣ 第三步：配置扩展程序权限（⚠️ 关键步骤）
+由于 Chrome 新版浏览器的安全机制，我们需要手动开启以下几项扩展权限，否则本主题在飞书网页中无法正常加载。
+1.  **打开管理页面**：在浏览器地址栏输入 `chrome://extensions/` 并回车。
+    *   *提示：如果打不开，可以点击浏览器右上角的 **「三点菜单」 -> 「扩展程序」 -> 「管理扩展程序」**。*
+2.  **搜索并进入详情**：在搜索框中输入 `tam`，找到 **Tampermonkey**，点击其下方的 **「Details (详细信息)」** 按钮。
 
-**方式一：通过 Tampermonkey 菜单**
+![第三步-1：搜索并点击详细信息](assets/guide/user_step4.png)
 
-1. 点击浏览器右上角的 Tampermonkey 图标（🐒 猴子图标）
-2. 找到 **MellowLark**
-3. 点击想要的主题名称，当前激活的主题前面会有 `✓` 标记
-4. 点击"关闭主题"可以临时恢复飞书原始样式
+3.  **开启所有必要开关**：将以下右侧红框中的 4 个开关全部**开启（使滑块变成蓝色激活状态）**：
+    *   **Allow User Scripts (允许用户脚本)**：允许运行用户脚本（本主题核心权限）。
+    *   **Pin to toolbar (固定到工具栏)**：方便我们在右上角一键切换皮肤。
+    *   **Allow in Incognito (在无痕模式下启用)**
+    *   **Allow access to file URLs (允许访问文件网址)**
 
-**方式二：快捷键**
+![第三步-2：开启红框中的所有权限](assets/guide/user_step5.png)
 
-按下 `Alt + Shift + E` 可以立即开关主题，无需点击菜单。
+---
 
-> **Mac 用户**：如果 `Alt+Shift+E` 无效，可能是因为该快捷键被其他应用占用，请通过 Tampermonkey 菜单操作。
+#### 4️⃣ 第四步：进入飞书，切换护眼配色
+1.  在浏览器中登录网页版飞书（feishu.cn），打开任意一个多维表格（Base）。
+    *   *注：本主题目前仅支持网页端，飞书桌面客户端暂不支持。*
+2.  点击浏览器右上角已固定的 **油猴 🐒 图标**（如果看不到，先点击拼图 🧩 图标）。
+3.  在弹出的油猴菜单列表中，找到 MellowLark 项目下方，点击选择您想要的配色样式（🌾 纸墨、🌿 薄荷、☁️ 云灰）。当前激活的主题前面会有 `✓` 标记。点击 **Disable Theme / 关闭主题** 可以恢复网页的原始颜色。
+
+![第四步：打开小猴子菜单切换配色](assets/guide/user_step6.png)
+
+---
+
+### ⌨️ 进阶小技巧：快捷键一键开关
+
+如果您在向同事演示或截图时需要临时恢复飞书原本的高对比度白色配色，无需每次都去点猴子菜单。您可以使用键盘快捷键：
+*   **Windows 电脑**：同时按下 `Alt + Shift + E`。
+*   **Mac 电脑**：同时按下 `option + shift + E`。
+*   按下即可在“舒适配色”和“飞书默认配色”之间瞬间切换。
+
+> [!NOTE]
+> 如果您按下快捷键没有反应，可能是该键位被电脑里的其他软件（如QQ/微信/网易云等快捷热键）占用了，推荐直接使用右上角的 🐒 菜单进行切换。
 
 ---
 
