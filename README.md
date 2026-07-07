@@ -58,9 +58,13 @@
 
 在应用商店页面点击 **「添加至 Chrome」**（或 **「获取」**），并在弹出的确认框中选择 **「添加扩展程序」**。
 
+<details>
+<summary>🔍 点击展开/折叠「第一步：安装油猴扩展」截图</summary>
+<br/>
 <p align="center">
   <img src="assets/guide/user_step1.png" width="450" alt="第一步：安装油猴扩展" />
 </p>
+</details>
 
 ---
 
@@ -71,11 +75,15 @@
 
 在浏览器自动弹出的安装页面中，点击左侧红框中的 **「安装」** (或 **「重新安装」**) 按钮。点击后该页面会自动关闭，脚本即安装成功。
 
+<details>
+<summary>🔍 点击展开/折叠「第二步：安装脚本」截图</summary>
+<br/>
 <p align="center">
   <img src="assets/guide/user_step2.png" width="380" alt="第二步-1：点击 GitHub 直接安装链接" />
-  <br/>
+  <br/><br/>
   <img src="assets/guide/user_step3.png" width="480" alt="第二步-2：点击安装按钮" />
 </p>
+</details>
 
 ---
 
@@ -85,9 +93,13 @@
     *   *提示：如果打不开，可以点击浏览器右上角的 **「三点菜单」 -> 「扩展程序」 -> 「管理扩展程序」**。*
 2.  **搜索并进入详情**：在搜索框中输入 `tam`，找到 **Tampermonkey**，点击其下方的 **「Details (详细信息)」** 按钮。
 
+<details>
+<summary>🔍 点击展开/折叠「第三步：配置扩展权限」截图</summary>
+<br/>
 <p align="center">
   <img src="assets/guide/user_step4.png" width="500" alt="第三步-1：搜索并点击详细信息" />
 </p>
+</details>
 
 3.  **开启所有必要开关**：将以下右侧红框中的 4 个开关全部**开启（使滑块变成蓝色激活状态）**：
     *   **Allow User Scripts (允许用户脚本)**：允许运行用户脚本（本主题核心权限）。
@@ -95,9 +107,13 @@
     *   **Allow in Incognito (在无痕模式下启用)**
     *   **Allow access to file URLs (允许访问文件网址)**
 
+<details>
+<summary>🔍 点击展开/折叠「第三步：开启权限开关」截图</summary>
+<br/>
 <p align="center">
   <img src="assets/guide/user_step5.png" width="480" alt="第三步-2：开启红框中的所有权限" />
 </p>
+</details>
 
 ---
 
@@ -107,9 +123,13 @@
 2.  点击浏览器右上角已固定的 **油猴 🐒 图标**（如果看不到，先点击拼图 🧩 图标）。
 3.  在弹出的油猴菜单列表中，找到 MellowLark 项目下方，点击选择您想要的配色样式（🌾 纸墨、🌿 薄荷、☁️ 云灰）。当前激活的主题前面会有 `✓` 标记。点击 **Disable Theme / 关闭主题** 可以恢复网页的原始颜色。
 
+<details>
+<summary>🔍 点击展开/折叠「第四步：切换护眼配色」截图</summary>
+<br/>
 <p align="center">
   <img src="assets/guide/user_step6.png" width="480" alt="第四步：打开小猴子菜单切换配色" />
 </p>
+</details>
 
 ---
 
